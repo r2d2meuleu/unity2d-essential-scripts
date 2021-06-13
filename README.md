@@ -10,3 +10,5 @@ As of for now, in this project you can find scripts for:
 - Drag and Shoot Movement.
 
 There are many more i'm planning to add to the repository, i'll work on it for as much as i have time.
+
+THIS PROJECT USES [@PixeyeHQ](https://github.com/PixeyeHQ/InspectorFoldoutGroup) INSPECTOR FOLDOUT GROUP TO MAKE THE DEVELOPMENT CLEANER
