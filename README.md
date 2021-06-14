@@ -16,6 +16,14 @@ Dialogues:
 - Conversation between multiple characters;
 - Scriptable object used to easily create dialogues.
 
+Health system:
+- Zelda like health system: 
+    - Full/Empty hearths;
+    - Dev can decide total amount of hearths;
+    - PlayerPref ready.
+
+
+
 There are many more i'm planning to add to the repository, i'll work on it for as much as i have time.
 
 THIS PROJECT USES [@PixeyeHQ](https://github.com/PixeyeHQ/InspectorFoldoutGroup) INSPECTOR FOLDOUT GROUP TO MAKE THE DEVELOPMENT CLEANER
