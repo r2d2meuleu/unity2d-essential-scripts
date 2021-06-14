@@ -18,9 +18,9 @@ public class PlatformerPlayerMovent : MonoBehaviour
     bool grounded;
 
     [Foldout("Ground Checker", true)]
-    [SerializeField] LayerMask whatIsGround; //Apply the layer you use to identify the ground on wich you can jump on
+    [SerializeField] LayerMask whatIsGround; //Apply the layer you use to identify the ground on which you can jump on
     [SerializeField] Transform groundCheck; // Create a child gameobject to your player on move it to the bottom
-    [SerializeField] float groundCheckRadius = 0.05f; // Ground che tollerance
+    [SerializeField] float groundCheckRadius = 0.05f; // Ground check tollerance
 
     new Rigidbody2D rigidbody2D;
 

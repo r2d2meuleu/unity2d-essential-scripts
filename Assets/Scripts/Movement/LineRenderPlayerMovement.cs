@@ -49,7 +49,7 @@ public class LineRenderPlayerMovement : MonoBehaviour
             rigidbody2D.velocity = Vector3.zero;
 
             startPoint = cam.ScreenToWorldPoint(Input.mousePosition);         // Set the start position of the Line Renderer to be the current position of your cursor
-            //startPoint = gameObject.transform.position;                     //Set the start position of the Line Rendere to be the center of the gameobjet
+            //startPoint = gameObject.transform.position;                     //Set the start position of the Line Renderer to be the center of the gameobjet
 
             startPoint.z = 15;
         }
