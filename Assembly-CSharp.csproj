@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Movement\GridbasedPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Scriptable Dialogue Example Texts\DialogueInformation.cs" />
+    <Compile Include="Assets\Scripts\Health\HearthSystem.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -19,12 +19,12 @@ public class DialogueManager : MonoBehaviour
     {
         if (characterName == null)
         {
-            Debug.Log("No character name selected!");
+            Debug.Log($"No character name selected in '{gameObject.name}'");
         }
 
         if (dialogueText == null)
         {
-            Debug.Log("No dialogue text selected!");
+            Debug.Log($"No dialogue text selected in '{gameObject.name}'");
         }
 
         #region This code initialises the dialogue panel, if passes the first line to play and executes the TypeWriter Coroutine, or if you don't want to play multiple dialogues, it just takes the line from the TMP_Text component attached
