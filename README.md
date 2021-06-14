@@ -22,6 +22,17 @@ Health system:
     - Dev can decide total amount of hearths;
     - PlayerPref ready.
 
+Quest System:
+- Quest Manager:
+    - Create new quests;
+    - Check quests completion.
+- Quest Marker:
+    - Mark quests a completed via OnTriggerEnter or by pressing a given KeyCode inside its area.
+- Quest Object Activator:
+    - Activate/Deactivate a given object upon quest completion;
+    - Could also implement UnityEvents.
+
+
 
 
 There are many more i'm planning to add to the repository, i'll work on it for as much as i have time.
