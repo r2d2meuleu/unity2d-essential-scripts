@@ -5,10 +5,16 @@ meaning you just have to drop them on your gameObject to make them work.
 
 As of for now, in this project you can find scripts for:
 
+Movement:
 - Topdown Movement;
 - Platform Movement with jump (and double jump);
-- Drag and Shoot Movement.
+- Drag and Shoot Movement;
 - Grid based Movement.
+
+Dialogues:
+- TypeWriter Effect for text;
+- Conversation between multiple characters;
+- Scriptable object used to easily create dialogues.
 
 There are many more i'm planning to add to the repository, i'll work on it for as much as i have time.
 
