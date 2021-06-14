@@ -56,11 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Movement\PlatformerPlayerMovent.cs" />
-    <Compile Include="Assets\Scripts\Movement\TopDownPlayerMovement.cs" />
-    <Compile Include="Assets\Inspector-Foldout-Group\Homebrew\DecorateFoldout\Attributes\FoldAttribute.cs" />
-    <Compile Include="Assets\Scripts\Movement\LineRenderPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\LineRender\LineRender.cs" />
+    <Compile Include="Assets\Inspector-Foldout-Group\Homebrew\DecorateFoldout\Attributes\FoldAttribute.cs" />
+    <Compile Include="Assets\Scripts\Movement\PlatformerPlayerMovent.cs" />
+    <Compile Include="Assets\Scripts\Movement\LineRenderPlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Movement\TopDownPlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Movement\GridbasedPlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

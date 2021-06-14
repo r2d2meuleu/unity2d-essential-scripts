@@ -8,14 +8,19 @@ public class TopDownPlayerMovement : MonoBehaviour
     float xMovement;
     float yMovement;
 
+    [SerializeField] bool useCustomSettings;
+
     new Rigidbody2D rigidbody2D;
 
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
 
-        rigidbody2D.gravityScale = 0;
-        rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+        if (useCustomSettings)
+        {
+            rigidbody2D.gravityScale = 0;
+            rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
     }
 
     void Update()
