@@ -27,3 +27,7 @@ Health system:
 There are many more i'm planning to add to the repository, i'll work on it for as much as i have time.
 
 THIS PROJECT USES [@PixeyeHQ](https://github.com/PixeyeHQ/InspectorFoldoutGroup) INSPECTOR FOLDOUT GROUP TO MAKE THE DEVELOPMENT CLEANER
+
+THE HEARTHS SPRITES USED IN THE ZELDA LIKE HEARTH SYSTEM WERE TAKEN FROM [NicoleMarieT](https://nicolemariet.itch.io/pixel-heart-animation-32x32-16x16-freebie) ON ITCH.IO
+
+THE FONT USED IS TAKEN FROM [Void](https://arcade.itch.io/heartbit) ON ITCH.IO
