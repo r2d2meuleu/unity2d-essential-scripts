@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class TypewriterEffect : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
     [SerializeField] TMP_Text characterName;
     [SerializeField] TMP_Text dialogueText;
