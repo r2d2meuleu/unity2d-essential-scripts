@@ -342,5 +342,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlappyBirdLikePlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 4372112532106593917, guid: e29a20dd95ee91542ba057599271217d, type: 3}
+      propertyPath: strenght
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e29a20dd95ee91542ba057599271217d, type: 3}

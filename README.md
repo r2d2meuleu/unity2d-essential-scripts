@@ -1,49 +1,117 @@
-# WELCOME TO MY UNITY 2D ESSENTIAL SCRIPTS
+<p align="center"><img src="demo/title.png"></p>
 
-Inside the project you can find various plug-and-play scripts,
-meaning you just have to drop them on your gameObject to make them work.
+## <center> <b> Inside the project you can find various plug-and-play scripts, </center>
+## <center> <b> meaning you just have to drop them on your gameObject to make them work.</center>
+<br>
 
-As of for now, in this project you can find scripts for:
+### As of for now, in this project you can find scripts for:
+<br>
+<details>
+<summary>Movement 🦶</summary><br>
 
-Movement:
-- Topdown Movement;
-- Platform Movement with jump (and double jump);
-- Drag and Shoot Movement;
-- Grid based Movement;
-- Flappy Bird like movement.
+<details>
+<summary>Topdown Movement</summary>
 
-Dialogues:
-- TypeWriter Effect for text;
-- Conversation between multiple characters;
-- Scriptable object used to easily create dialogues.
+![dialogue](demo/topdownmov.gif)
+</details>
+<details>
+<summary>Platform Movement with jump (and double jump)</summary>
 
-Health system:
-- Zelda like health system: 
+![dialogue](demo/platmov.gif)
+</details>
+<details>
+<summary>Drag and Shoot Movement</summary>
+
+![dialogue](demo/linerendmov.gif)
+</details>
+<details>
+<summary>Grid based Movement</summary>
+
+![dialogue](demo/gridmov.gif)
+</details>
+<details>
+<summary>Flappy Bird like movement</summary>
+
+![dialogue](demo/flapmov.gif)
+</details>
+</details>
+
+<br>
+
+<details>
+<summary>Dialogues 💬</summary>
+
+    - TypeWriter Effect for text;
+    - Conversation between multiple characters;
+    - Scriptable object used to easily create dialogues.
+![dialogue](demo/dialogue.gif)
+</details>
+
+<br>
+
+<details>
+<summary>Health system 💖</summary>
+
+<details open>
+<summary>Zelda like health system</summary>
+
     - Full/Empty hearths;
     - Dev can decide total amount of hearths;
     - PlayerPref ready.
+![health](demo/health.gif)
+</details>
+</details>
 
-Quest System:
-- Quest Manager:
+<br>
+
+<details>
+<summary>Quest System ❕</summary>
+
+<details open>
+<summary>Quest Manager</summary>
+
     - Create new quests;
     - Check quests completion.
-- Quest Marker:
+</details>
+<details open>
+<summary>Quest Marker</summary>
+
     - Mark quests a completed via OnTriggerEnter or by pressing a given KeyCode inside its area.
-- Quest Object Activator:
+</details>
+<details open>
+<summary>Quest Object Activator</summary>
+
     - Activate/Deactivate a given object upon quest completion;
     - Could also implement UnityEvents.
+</details>
 
-Platform Spawner:
-- Spawn a gameObject and move it from point A to B;
-- Useful for games like Flappy Bird or Endless Runners .
+![quest](demo/quest.gif)
+</details>
 
+<br>
 
+<details>
+<summary>Platform Spawner ⬜</summary>
 
+    - Spawn a gameObject and move it from point A to B;
+    - Useful for games like Flappy Bird or Endless Runners.
+![platforms](demo/movinplatfms.gif)
+</details>
 
-There are many more i'm planning to add to the repository, i'll work on it for as much as i have time.
+<br>
 
-THIS PROJECT USES [@PixeyeHQ](https://github.com/PixeyeHQ/InspectorFoldoutGroup) INSPECTOR FOLDOUT GROUP TO MAKE THE DEVELOPMENT CLEANER
+There are many more i'm planning to add to the repository, i'll work on it for as much as i have time.<br>
+At the moment there are 13 scripts.
 
-THE HEARTHS SPRITES USED IN THE ZELDA LIKE HEARTH SYSTEM WERE TAKEN FROM [NicoleMarieT](https://nicolemariet.itch.io/pixel-heart-animation-32x32-16x16-freebie) ON ITCH.IO
+<br>
 
-THE FONT USED IS TAKEN FROM [Void](https://arcade.itch.io/heartbit) ON ITCH.IO
+<details>
+<summary>Credits 👑</summary>
+
+- This project uses [@PixeyeHQ](https://github.com/PixeyeHQ/InspectorFoldoutGroup) inspector foldout group to make the development cleaner;
+
+- the hearths sprites used in the zelda like hearth system were taken from [NicoleMarieT](https://nicolemariet.itch.io/pixel-heart-animation-32x32-16x16-freebie) on itch.io;
+
+- the font used is taken from [Void](https://arcade.itch.io/heartbit) on itch.io.
+</details>
+
