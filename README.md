@@ -100,7 +100,7 @@
 
 <br>
 
-There are many more i'm planning to add to the repository, i'll work on it for as much as i have time.<br>
+There's more i'm planning to add to the repository, i'll work on it for as much as i have time.<br>
 At the moment there are 13 scripts.
 
 <br>
