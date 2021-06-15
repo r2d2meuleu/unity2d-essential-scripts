@@ -9,7 +9,8 @@ Movement:
 - Topdown Movement;
 - Platform Movement with jump (and double jump);
 - Drag and Shoot Movement;
-- Grid based Movement.
+- Grid based Movement;
+- Flappy Bird like movement.
 
 Dialogues:
 - TypeWriter Effect for text;
@@ -31,6 +32,10 @@ Quest System:
 - Quest Object Activator:
     - Activate/Deactivate a given object upon quest completion;
     - Could also implement UnityEvents.
+
+Platform Spawner:
+- Spawn a gameObject and move it from point A to B;
+- Useful for games like Flappy Bird or Endless Runners .
 
 
 
