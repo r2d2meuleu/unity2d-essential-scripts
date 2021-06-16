@@ -18,8 +18,9 @@ public class MuteAudio : MonoBehaviour
         toggle = GetComponent<Toggle>();
 
         foreach (var slider in GameObject.FindGameObjectsWithTag(sliderTag))    // Get all the sliders in the scene with the given gameObject Tag,
-        {                                                                       // you can have more than one if you want to control for example the SFX without impacting the Backgroung volume
-            sliders.Add(slider.GetComponent<AudioSource>());
+        {                                                                       // you can have more than one if you want to control for example the SFX without impacting the Backgroung volume            
+            if (slider.TryGetComponent(out AudioSource validslider)) sliders.Add(validslider.GetComponent<AudioSource>());
+            else Debug.Log($"{slider.gameObject.name} has no AudioSource!");
         }
 
         if (PlayerPrefs.GetInt($"{sliderTag} toggle") == 1) toggle.isOn = true;        // Simple way to set the toggle to be on or not based on what was the last value saved
