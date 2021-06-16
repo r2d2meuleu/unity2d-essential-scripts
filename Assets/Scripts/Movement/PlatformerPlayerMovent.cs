@@ -8,6 +8,7 @@ public class PlatformerPlayerMovent : MonoBehaviour
     [SerializeField] float moveSpeed = 10f; //Player movement speed
     [SerializeField] float jumpForce = 10f; //Impulse to apply on KeyCode press
     [SerializeField] float jumpTime = 0f; //Airborne time
+    [SerializeField] KeyCode jumpKey = KeyCode.Space;
 
     float jumpTimeCounter;
     bool stoppedJumping;
@@ -52,7 +53,7 @@ public class PlatformerPlayerMovent : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.Space) && !stoppedJumping)
+        if (Input.GetKey(jumpKey) && !stoppedJumping)
         {
             if (jumpTimeCounter > 0)
             {
@@ -61,7 +62,7 @@ public class PlatformerPlayerMovent : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
+        if (Input.GetKeyUp(jumpKey))
         {
             jumpTimeCounter = 0;
             stoppedJumping = true;

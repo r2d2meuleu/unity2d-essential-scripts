@@ -10,8 +10,8 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     [Foldout("Save and Load keys", true)]
-    [SerializeField] KeyCode saveQuestsKey;
-    [SerializeField] KeyCode loadQuestsKey;
+    [SerializeField] KeyCode saveQuestsKey = KeyCode.O;
+    [SerializeField] KeyCode loadQuestsKey = KeyCode.L;
 
     [Foldout("Quests", true)]
     [Header("Keep the first value empty")]

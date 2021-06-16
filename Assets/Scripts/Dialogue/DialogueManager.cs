@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] TMP_Text dialogueText;
 
     [Foldout("Dialogue Settings", true)]
-    [SerializeField] KeyCode dialogueProgressKey;
+    [SerializeField] KeyCode dialogueProgressKey = KeyCode.E;
 
     [SerializeField] DialogueInformation[] dialogues; //to create a dialogue information right click on an empty folder and from the menu select "Dialogue" on top
     [Range(0, .2f)] [SerializeField] float textRevealSpeed; // Set how much time to wait before revealing a char
