@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Dialogue\TypewriterEffect.cs" />
     <Compile Include="Assets\Scripts\Audio\VolumeSlider.cs" />
     <Compile Include="Assets\Scripts\Audio\MuteAudio.cs" />
+    <Compile Include="Assets\Scripts\Health\HealthBar.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

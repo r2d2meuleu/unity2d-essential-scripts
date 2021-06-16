@@ -54,6 +54,14 @@ public class HearthSystem : MonoBehaviour
             }
         }
 
+        if(currentHealth <= 0)
+        {
+            currentHealth = 0;
+        }if(currentHealth > maxHearts)
+        {
+            currentHealth = maxHearts;
+        }
+
         PlayerPrefs.SetInt("Health", currentHealth);
 
         #region This is for testing porpuses only, remove if unnecessary
