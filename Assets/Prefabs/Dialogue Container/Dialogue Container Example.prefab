@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7791093184645991533}
   - component: {fileID: 5029062783052837708}
   - component: {fileID: 5845706201323489660}
-  - component: {fileID: 7275973237738170076}
+  - component: {fileID: 6566418821214651437}
   m_Layer: 5
   m_Name: Dialogue system Text Tips
   m_TagString: Untagged
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7275973237738170076
+--- !u!114 &6566418821214651437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,14 +146,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2419229821191969909}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 439d7b51573c7ca42b3d89dfd7517d30, type: 3}
+  m_Script: {fileID: 11500000, guid: 1032ffee88f264941873c97764c5ff89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: {fileID: 0}
-  dialogueText: {fileID: 5845706201323489660}
-  textRevealSpeed: 0.02
-  dialogues: []
-  lineCount: 0
+  textRevealSpeed: 0.05
 --- !u!1 &3409738151675561511
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,11 +512,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: {fileID: 3409738152829697412}
   dialogueText: {fileID: 3409738153302818845}
-  textRevealSpeed: 0.018
+  dialogueProgressKey: 101
   dialogues:
   - {fileID: 11400000, guid: df436280d93dc5f47b5f1f233cdd3619, type: 2}
   - {fileID: 11400000, guid: a978b08f5046102499e5a164c3ec9d3c, type: 2}
-  lineCount: 0
+  textRevealSpeed: 0.02
 --- !u!225 &3409738152180536723
 CanvasGroup:
   m_ObjectHideFlags: 0

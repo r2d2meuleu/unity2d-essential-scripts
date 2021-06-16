@@ -1,18 +1,22 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using Pixeye.Unity;
 
 public class DialogueManager : MonoBehaviour
 {
+    [Foldout("Dialogue Components", true)]
     [SerializeField] TMP_Text characterName;
     [SerializeField] TMP_Text dialogueText;
 
-    [Range(0, .2f)] [SerializeField] float textRevealSpeed; // Set how much time to wait before revealing a char
+    [Foldout("Dialogue Settings", true)]
+    [SerializeField] KeyCode dialogueProgressKey;
 
     [SerializeField] DialogueInformation[] dialogues; //to create a dialogue information right click on an empty folder and from the menu select "Dialogue" on top
+    [Range(0, .2f)] [SerializeField] float textRevealSpeed; // Set how much time to wait before revealing a char
 
-    bool proceedWithNextLine;           // Stops the player from interrupting the dialogue mid sentence
-    [SerializeField] int lineCount = 0; // Shows the text of the current Dialogue information selected, leave it to 0
+    bool proceedWithNextLine; // Stops the player from interrupting the dialogue mid sentence
+    int lineCount = 0; // Shows the text of the current Dialogue information selected, leave it to 0
     bool useLines;
 
     void Start()
@@ -27,7 +31,7 @@ public class DialogueManager : MonoBehaviour
             Debug.Log($"No dialogue text selected in '{gameObject.name}'");
         }
 
-        #region This code initialises the dialogue panel, if passes the first line to play and executes the TypeWriter Coroutine, or if you don't want to play multiple dialogues, it just takes the line from the TMP_Text component attached
+        #region This code initialises the dialogue panel, it passes the first line to play and executes the TypeWriter Coroutine, or if you don't want to play multiple dialogues, it just takes the line from the TMP_Text component attached
 
         if (dialogues.Length > 0) // If you want multiple dialogues to be used 
         {
@@ -37,7 +41,7 @@ public class DialogueManager : MonoBehaviour
 
             StartCoroutine(TypeWriter());
         }
-        else if(dialogues.Length == 0) // This is for using the text in the TMP_Text component
+        else if (dialogues.Length == 0) // This is for using the text in the TMP_Text component
         {
             useLines = false;
             StartCoroutine(TypeWriter());
@@ -48,10 +52,9 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-
         #region This is an example of how you can use the TypeWriter coroutine to make a dialogue between characters, comment out if unnecessary
 
-        if (Input.GetKeyDown(KeyCode.E) && proceedWithNextLine && lineCount < dialogues.Length - 1)
+        if (Input.GetKeyDown(dialogueProgressKey) && proceedWithNextLine && lineCount < dialogues.Length - 1)
         {
             if (useLines) lineCount++;
 
@@ -82,6 +85,7 @@ public class DialogueManager : MonoBehaviour
 
             yield return new WaitForSeconds(textRevealSpeed);
         }
+
         dialogueText.maxVisibleCharacters = totalVisibleCharacters;
 
         proceedWithNextLine = true;

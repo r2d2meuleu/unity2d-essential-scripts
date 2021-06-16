@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 public class FlappyBirdLikeMovement : MonoBehaviour
 {
-    Rigidbody2D rigidbody2D;
+    new Rigidbody2D rigidbody2D;
     [SerializeField] float strenght;
 
     private void Start()

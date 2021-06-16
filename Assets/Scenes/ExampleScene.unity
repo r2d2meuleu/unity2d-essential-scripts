@@ -170,14 +170,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 105347067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 439d7b51573c7ca42b3d89dfd7517d30, type: 3}
+  m_Script: {fileID: 11500000, guid: 1032ffee88f264941873c97764c5ff89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: {fileID: 0}
-  dialogueText: {fileID: 105347070}
-  textRevealSpeed: 0.02
-  dialogues: []
-  lineCount: 0
+  textRevealSpeed: 0.05
 --- !u!114 &105347070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,14 +614,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 557740187}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 439d7b51573c7ca42b3d89dfd7517d30, type: 3}
+  m_Script: {fileID: 11500000, guid: 1032ffee88f264941873c97764c5ff89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: {fileID: 0}
-  dialogueText: {fileID: 557740189}
-  textRevealSpeed: 0.1
-  dialogues: []
-  lineCount: 0
+  textRevealSpeed: 0.05
 --- !u!1 &599973496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,10 +1058,6 @@ PrefabInstance:
     - target: {fileID: 3409738152180536726, guid: 40a175f1e0b45594185bcb7cdb6241c6, type: 3}
       propertyPath: m_Name
       value: Dialogue Container Example
-      objectReference: {fileID: 0}
-    - target: {fileID: 3409738152180536726, guid: 40a175f1e0b45594185bcb7cdb6241c6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3409738152180536727, guid: 40a175f1e0b45594185bcb7cdb6241c6, type: 3}
       propertyPath: m_Pivot.x

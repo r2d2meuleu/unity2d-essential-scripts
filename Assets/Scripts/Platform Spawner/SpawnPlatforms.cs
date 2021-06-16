@@ -49,7 +49,7 @@ public class SpawnPlatforms : MonoBehaviour
                 obstacleHeight = Random.Range(minHeight, maxHeight);
 
                 multiplierTimer = spawnRate;
-                var newObstacle = Instantiate(obstacle, new Vector3(gameObject.transform.position.x, obstacleHeight), Quaternion.identity);
+                Instantiate(obstacle, new Vector3(gameObject.transform.position.x, obstacleHeight), Quaternion.identity);
             }
         }
 

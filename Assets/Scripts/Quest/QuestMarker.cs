@@ -3,7 +3,7 @@ using UnityEngine;
 /* ASSIGN THIS TO A GAMEOBJECT AND GIVE SAID GAMEOBJECT A COLLIDER SET AS TRIGGER, WHEN THE PLAYER STEPS IN, IF 'markQuestAsCompleteOnEnter' IS TRUE -
  * -THE QUEST WILL BE MARKED AS COMPLETED, IF 'markQuestAsCompleteOnEnter' IS SET TO FALSE, IN ORDER TO COMPLETE THE QUEST, THE PLAYER WILL HAVE TO PRESS-
  * -A GIVEN BUTTON FROM 'questMarkerKey'
- */ 
+ */
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class QuestMarker : MonoBehaviour
@@ -42,7 +42,7 @@ public class QuestMarker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
             if (markQuestAsCompleteOnEnter)
             {
@@ -57,7 +57,7 @@ public class QuestMarker : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
             canMark = false;
         }

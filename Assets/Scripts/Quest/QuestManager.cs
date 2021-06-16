@@ -1,3 +1,4 @@
+using Pixeye.Unity;
 using UnityEngine;
 
 /*
@@ -6,14 +7,17 @@ using UnityEngine;
  * I WILL INVESTIGATE THIS ISSUE LATER ON
  */
 
-
 public class QuestManager : MonoBehaviour
 {
-    [SerializeField] string[] questMarkerName;
-    [SerializeField] bool[] questMarkerComplete;
-
+    [Foldout("Save and Load keys", true)]
     [SerializeField] KeyCode saveQuestsKey;
     [SerializeField] KeyCode loadQuestsKey;
+
+    [Foldout("Quests", true)]
+    [Header("Keep the first value empty")]
+    [SerializeField] string[] questMarkerName;
+    [Header("Keep empty")]
+    [SerializeField] bool[] questMarkerComplete;
 
     public static QuestManager instance;
 

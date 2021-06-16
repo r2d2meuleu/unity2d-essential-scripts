@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /* ASSIGN THIS SCRIPT TO A GAMEOBJECT, THEN CREATE A CHILD. THE CHILD WILL BE THE GAMEOBJECT YOU WILL ATTACH TO 'objectToActivate'
  * 'questToCheck' WILL BE THE QUEST THE GAMEOBJECT WILL WAIT TO BE COMPLETED BEFORE CALLING THE FUNCTION 'CheckCompletion'
@@ -9,9 +10,9 @@ using UnityEngine;
 
 public class QuestObjectActivator : MonoBehaviour
 {
-    public GameObject objectToActivate;
     public string questToCheck;
-    public bool activeIfComplete;
+
+    [field: SerializeField] UnityEvent OnQuestComplete;
 
     private bool initialCheckDone;
 
@@ -28,7 +29,7 @@ public class QuestObjectActivator : MonoBehaviour
     {
         if (QuestManager.instance.CheckIfComplete(questToCheck))
         {
-            objectToActivate.SetActive(activeIfComplete);
+            OnQuestComplete?.Invoke();
         }
     }
 }
