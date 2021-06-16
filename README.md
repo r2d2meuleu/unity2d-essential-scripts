@@ -72,6 +72,16 @@
 ![health](demo/health.gif)
 
 </details>
+<details open>
+<summary>Health slider system</summary>
+
+    - Fully customizable slider;
+    - Dev can decide total amount of HPs;
+    - PlayerPref ready.
+
+![health](demo/HPslider.gif)
+
+</details>
 </details>
 
 <br>
@@ -121,14 +131,14 @@
 <details>
 <summary>Audio Managment 🔉</summary>
 
-<details>
+<details open>
 <summary>Audio Slider</summary>
 
     - Dedicated custom sliders and scripts to manage audio runtimes
     - Save audio volume inside a PlayerPrefab that will save and use the value on start
 
 </details>
-<details>
+<details open>
 <summary>Audio Toggle</summary>
 
     - Mute audio of a selected group of sliders

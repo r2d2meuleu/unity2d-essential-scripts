@@ -2619,3 +2619,61 @@ System memory in use after: 90.7 MB.
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2735.
 Total: 2.193100 ms (FindLiveObjects: 0.274900 ms CreateObjectMapping: 0.053700 ms MarkObjects: 1.744200 ms  DeleteObjects: 0.119100 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000977 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.985 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1822 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.6 MB.
+System memory in use after: 90.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2739.
+Total: 2.207700 ms (FindLiveObjects: 0.261800 ms CreateObjectMapping: 0.058700 ms MarkObjects: 1.761200 ms  DeleteObjects: 0.124900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2101.734548 seconds.
+  path: Assets/Prefabs/Hearth System/Slider HP Bar.prefab
+  artifactKey: Guid(740e903c00a9d3641a1cd367757b09a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Hearth System/Slider HP Bar.prefab using Guid(740e903c00a9d3641a1cd367757b09a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e42d1924a26c992605aa56cdb256b3') in 0.050600 seconds
+  Import took 0.053820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066322 seconds.
+  path: Assets/Prefabs/Hearth System/Slider HP Bar.prefab
+  artifactKey: Guid(740e903c00a9d3641a1cd367757b09a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Hearth System/Slider HP Bar.prefab using Guid(740e903c00a9d3641a1cd367757b09a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e42d1924a26c992605aa56cdb256b3') in 0.003837 seconds
+  Import took 0.007653 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000879 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.169 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1822 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.6 MB.
+System memory in use after: 90.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2743.
+Total: 2.415100 ms (FindLiveObjects: 0.386300 ms CreateObjectMapping: 0.085500 ms MarkObjects: 1.807000 ms  DeleteObjects: 0.135200 ms)
+
