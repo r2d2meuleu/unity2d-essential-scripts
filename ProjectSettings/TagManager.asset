@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Obstacle
+  - BG Volume
+  - Main Volume
   layers:
   - Default
   - TransparentFX
