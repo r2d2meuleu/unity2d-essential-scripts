@@ -152,8 +152,31 @@
 
 <br>
 
+<details>
+<summary>Enemy Spawners 🧛‍♂️</summary>
+
+    - Spawn a random object from an array of gameObjects
+    - Select a Min/Max numbers of enemies to spawn per callback
+    - Select how many enemies can be active at the same time
+
+<details open>
+<summary>Spawn gameObjects inside Tilemap</summary>
+
+![spawner](demo/spawnInTilemap.gif)
+
+</details>
+<details open>
+<summary>Spawn gameObjects inside Area</summary>
+
+![spawner](demo/spawnInArea.gif)
+
+</details>
+</details>
+
+<br>
+
 There's more i'm planning to add to the repository, i'll work on it for as much as i have time.<br>
-At the moment there are 16 scripts.
+At the moment there are 19 scripts.
 
 <br>
 
@@ -162,7 +185,11 @@ At the moment there are 16 scripts.
 
 - This project uses [@PixeyeHQ](https://github.com/PixeyeHQ/InspectorFoldoutGroup) inspector foldout group to make the development cleaner;
 
-- the hearths sprites used in the zelda like hearth system were taken from [NicoleMarieT](https://nicolemariet.itch.io/pixel-heart-animation-32x32-16x16-freebie) on itch.io;
+- The hearths sprites used in the zelda like hearth system were taken from [NicoleMarieT](https://nicolemariet.itch.io/pixel-heart-animation-32x32-16x16-freebie) on itch.io;
 
-- the font used is taken from [Void](https://arcade.itch.io/heartbit) on itch.io.
+- The font used is taken from [Void](https://arcade.itch.io/heartbit) on itch.io;
+
+- Tilemap asset taken from [Adam Saltman](https://adamatomic.itch.io/jawbreaker) on itch.io;
+
+- Enemy sprite taken from [0x72](https://0x72.itch.io/dungeontileset-ii) on itch.io.
 </details>
