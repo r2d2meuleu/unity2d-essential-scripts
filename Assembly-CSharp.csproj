@@ -63,19 +63,21 @@
     <Compile Include="Assets\Scripts\Quest\QuestMarker.cs" />
     <Compile Include="Assets\Scripts\Spawners\SpawnObjectsOnTilemap.cs" />
     <Compile Include="Assets\Scripts\Audio\MuteAudio.cs" />
+    <Compile Include="Assets\Scripts\Movement\PlatformerPlayerMoventWithAnimations.cs" />
     <Compile Include="Assets\Scripts\Audio\VolumeSlider.cs" />
     <Compile Include="Assets\Scripts\Platform Spawner\SpawnPlatforms.cs" />
     <Compile Include="Assets\Scripts\Dialogue\TypewriterEffect.cs" />
     <Compile Include="Assets\Scripts\Quest\QuestObjectActivator.cs" />
+    <Compile Include="Assets\Scripts\Animator Overrider\OverrideAnimations.cs" />
     <Compile Include="Assets\Scripts\Movement\PlatformerPlayerMovent.cs" />
     <Compile Include="Assets\Scripts\Health\HearthSystem.cs" />
+    <Compile Include="Assets\Scripts\Spawners\SpawnEnemyInsideArea.cs" />
     <Compile Include="Assets\Scripts\Movement\LineRenderPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Health\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Movement\GridbasedPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Quest\QuestManager.cs" />
     <Compile Include="Assets\Scripts\Movement\FlappyBirdLikeMovement.cs" />
     <Compile Include="Assets\Scripts\Movement\TopDownPlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Spawners\SpawnEnemyInsideArea.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

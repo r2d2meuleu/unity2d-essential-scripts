@@ -175,6 +175,20 @@
 
 <br>
 
+<details>
+<summary>Animator Overrider</summary>
+
+    - Override the animator to change on object appearance runtime
+    - Can call the function via scripts and on button click as in the example below
+    - Add as many Animator Overriders as you wish and change between them via simple Functions
+    - Sample scene provided
+
+![override](demo/animatorOverride.gif)
+
+</details>
+
+<br>
+
 There's more i'm planning to add to the repository, i'll work on it for as much as i have time.<br>
 At the moment there are 19 scripts.
 
@@ -192,4 +206,8 @@ At the moment there are 19 scripts.
 - Tilemap asset taken from [Adam Saltman](https://adamatomic.itch.io/jawbreaker) on itch.io;
 
 - Enemy sprite taken from [0x72](https://0x72.itch.io/dungeontileset-ii) on itch.io.
+
+- Button UIs comes from [Sumo Studio](https://sumo-studios.itch.io/pixel-art-buttons);
+
+- Tiny Heroes come from [Free Game Assets](https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art).
 </details>
