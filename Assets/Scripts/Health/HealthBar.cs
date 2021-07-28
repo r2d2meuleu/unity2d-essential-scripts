@@ -10,6 +10,8 @@ public class HealthBar : MonoBehaviour
     [Foldout("Health Setting", true)]
     [SerializeField] int health;
     [SerializeField] int maxHealth = 100;
+    [Range(0,0.05f)] [SerializeField] private float speedOfHealth;
+    [SerializeField] private string maxHpPlayerPrefName;
     [SerializeField] bool gameOver;
 
     [Foldout("Keys Settings", true)]
@@ -30,9 +32,9 @@ public class HealthBar : MonoBehaviour
     {
         healthBar = GetComponent<Slider>();
 
-        if (PlayerPrefs.HasKey("MaxHp"))
+        if (PlayerPrefs.HasKey(maxHpPlayerPrefName))
         {
-            maxHealth = (int)PlayerPrefs.GetFloat("MaxHp");
+            maxHealth = (int)PlayerPrefs.GetFloat(maxHpPlayerPrefName);
             healthBar.maxValue = maxHealth;
         }
         else
@@ -56,7 +58,7 @@ public class HealthBar : MonoBehaviour
             TakeDamage(10);
         }else if (Input.GetKeyDown(KeyCode.K))
         {
-            IncreaseMaxHP(10);
+            IncreaseMaxHp(10);
         }
 
         if(health <= 0)
@@ -71,18 +73,36 @@ public class HealthBar : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        StartCoroutine(TakeDamageCoroutine(damage));
     }
 
     public void Heal(int heal)
     {
-        health += heal;
+        StartCoroutine(HealCoroutine(heal));
     }
 
-    public void IncreaseMaxHP(int hpToAdd)
+    public void IncreaseMaxHp(int hpToAdd)
     {
         maxHealth += hpToAdd;
         healthBar.maxValue = maxHealth;
-        PlayerPrefs.SetFloat("MaxHp", maxHealth);
+        PlayerPrefs.SetFloat(maxHpPlayerPrefName, maxHealth);
+    }
+
+    private IEnumerator TakeDamageCoroutine(int damage)
+    {
+        for (int i = 0; i < damage; i++)
+        {
+            health -= 1;
+            yield return new WaitForSeconds(speedOfHealth);
+        }
+    }
+    
+    private IEnumerator HealCoroutine(int hpToAdd)
+    {
+        for (int i = 0; i < hpToAdd; i++)
+        {
+            health += 1;
+            yield return new WaitForSeconds(speedOfHealth);
+        }
     }
 }

@@ -5,21 +5,22 @@ using TMPro;
 public class TypewriterEffect : MonoBehaviour
 {
     TMP_Text dialogueText;
-    [Range(0, 1)] [SerializeField] float textRevealSpeed;
+    [Range(0, 1)] [SerializeField] float textRevealSpeed = .2f;
 
     private void Start()
     {
         dialogueText = GetComponent<TMP_Text>();
 
         if (dialogueText == null) Debug.Log($"No text component was found in {gameObject.name}");
-        else StartCoroutine(TypeWriter());
+        else StartCoroutine(TypeWriterEffect());
     }
 
     /// <summary>
-    /// This Coroutine reaveals the text of 'storyText', so you can add custom tags from the inspector without them glitching mid reveal.
+    /// Set on a gameObject with the component TMP_Text and set the speed you want each character to reveal; 
+    /// This Coroutine reveals the text of 'storyText', so you can add custom tags from the inspector without them glitching mid reveal.
     /// </summary>
     /// <returns></returns>
-    public IEnumerator TypeWriter()
+    public IEnumerator TypeWriterEffect()
     {
         dialogueText.ForceMeshUpdate();
 

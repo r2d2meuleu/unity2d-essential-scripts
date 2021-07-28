@@ -5357,6 +5357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner for Tilemaps
       objectReference: {fileID: 0}
+    - target: {fileID: 3330229950982570791, guid: 9c2e4022b7a6b394eb68537a1b79a934, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3330229950982570793, guid: 9c2e4022b7a6b394eb68537a1b79a934, type: 3}
       propertyPath: m_RootOrder
       value: 2

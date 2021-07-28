@@ -6,6 +6,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Toggle))]
 public class MuteAudio : MonoBehaviour
 {
+    [SerializeField] private KeyCode muteButton;
     [SerializeField] string sliderTag;
     [SerializeField] bool muteAudio;
 
@@ -18,7 +19,7 @@ public class MuteAudio : MonoBehaviour
         toggle = GetComponent<Toggle>();
 
         foreach (var slider in GameObject.FindGameObjectsWithTag(sliderTag))    // Get all the sliders in the scene with the given gameObject Tag,
-        {                                                                       // you can have more than one if you want to control for example the SFX without impacting the Backgroung volume            
+        {                                                                               // you can have more than one if you want to control for example the SFX without impacting the Background volume            
             if (slider.TryGetComponent(out AudioSource validslider)) sliders.Add(validslider.GetComponent<AudioSource>());
             else Debug.Log($"{slider.gameObject.name} has no AudioSource!");
         }
@@ -31,6 +32,12 @@ public class MuteAudio : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(muteButton))
+        {
+            if (toggle.isOn) toggle.isOn = false;
+            else toggle.isOn = true;
+        }
+        
         muteAudio = toggle.isOn;
 
         foreach (var slider in sliders)
