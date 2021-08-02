@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63fa2234720022d4099f92568612133d, type: 3}
+  m_Name: route-3
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 11400000, guid: 16635fb83c41b0243b00b3e294cee87e, type: 2}
+  - {fileID: 11400000, guid: 9a9393bb8fc28284ca9a78a4d3374860, type: 2}
+  - {fileID: 11400000, guid: 77d5f8a634db5ff4db5edd96ce9f906a, type: 2}
+  givenChoises:
+  - Go to route 2
+  - Go to route 1
+  - Go to initial state
+  background: {fileID: 21300000, guid: 267eb96b4aa786348802ad696c6095d1, type: 3}
+  nextStates:
+  - {fileID: 11400000, guid: d098e74552a091d40bad6c124f782b9b, type: 2}
+  - {fileID: 11400000, guid: 8b30e5ac03599e84a8e57a5ad53e310f, type: 2}
+  - {fileID: 11400000, guid: fa5f72c0faf9caa4eb79b4e3a6bd7d7a, type: 2}
