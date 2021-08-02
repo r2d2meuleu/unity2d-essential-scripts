@@ -6,13 +6,17 @@ public class TypewriterEffect : MonoBehaviour
 {
     TMP_Text dialogueText;
     [Range(0, 1)] [SerializeField] float textRevealSpeed = .2f;
+    public bool useOnStart;
 
     private void Start()
     {
         dialogueText = GetComponent<TMP_Text>();
 
-        if (dialogueText == null) Debug.Log($"No text component was found in {gameObject.name}");
-        else StartCoroutine(TypeWriterEffect());
+        if (useOnStart)
+        {
+            if (dialogueText == null) Debug.Log($"No text component was found in {gameObject.name}");
+            else StartCoroutine(TypeWriterEffect());
+        }
     }
 
     /// <summary>

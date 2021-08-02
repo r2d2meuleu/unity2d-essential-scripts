@@ -63,7 +63,10 @@
      <Compile Include="Assets\Scripts\Audio\VolumeSlider.cs" />
      <Compile Include="Assets\Scripts\Platform Spawner\SpawnPlatforms.cs" />
      <Compile Include="Assets\Scripts\Dialogue\TypewriterEffect.cs" />
+     <Compile Include="Assets\Scripts\Multiple Choice Dialogue\GetChoice.cs" />
+     <Compile Include="Assets\Scripts\Multiple Choice Dialogue\MultipleChoiceDialogueManager.cs" />
      <Compile Include="Assets\Scripts\Quest\QuestObjectActivator.cs" />
+     <Compile Include="Assets\Scripts\Multiple Choice Dialogue\MultipleDialogue.cs" />
      <Compile Include="Assets\Scripts\Animator Overrider\OverrideAnimations.cs" />
      <Compile Include="Assets\Scripts\Movement\PlatformerPlayerMovent.cs" />
      <Compile Include="Assets\Scripts\Health\HearthSystem.cs" />
@@ -73,6 +76,7 @@
      <Compile Include="Assets\Scripts\Movement\GridbasedPlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Quest\QuestManager.cs" />
      <Compile Include="Assets\Scripts\Movement\FlappyBirdLikeMovement.cs" />
+     <Compile Include="Assets\Scripts\Multiple Choice Dialogue\DialogueState.cs" />
      <Compile Include="Assets\Scripts\Movement\TopDownPlayerMovement.cs" />
      <None Include="Assets\Third Party\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Third Party\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
