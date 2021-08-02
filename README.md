@@ -50,10 +50,12 @@
 <summary>Dialogues 💬</summary>
 
     - TypeWriter Effect for text;
+    - Multiple choice based dialogue;
     - Conversation between multiple characters;
     - Scriptable object used to easily create dialogues.
 
 ![dialogue](demo/dialogue.gif)
+![multiple-choice-dialogue](demo/multiple-choice-dialogue-demo.gif)
 
 </details>
 
@@ -134,15 +136,16 @@
 <details open>
 <summary>Audio Slider</summary>
 
-    - Dedicated custom sliders and scripts to manage audio runtimes
-    - Save audio volume inside a PlayerPrefab that will save and use the value on start
+    - Dedicated custom sliders and scripts to manage audio runtimes;
+    - Save audio volume inside a PlayerPrefab that will save and use the value on start.
 
 </details>
 <details open>
 <summary>Audio Toggle</summary>
 
-    - Mute audio of a selected group of sliders
-    - Value is saved in a prefab and will be set as such on start
+    - Mute audio of a selected group of sliders;
+    - Value is saved in a prefab and will be set as such on start;
+    - Customizable KeyCode to quickly mute/unmute audio. 
 
 </details>
 
@@ -176,7 +179,7 @@
 <br>
 
 <details>
-<summary>Animator Overrider</summary>
+<summary>Animator Overrider 🦎</summary>
 
     - Override the animator to change on object appearance runtime
     - Can call the function via scripts and on button click as in the example below
@@ -190,7 +193,7 @@
 <br>
 
 There's more i'm planning to add to the repository, i'll work on it for as much as i have time.<br>
-At the moment there are 19 scripts.
+At the moment there are 27 scripts.
 
 <br>
 
@@ -205,9 +208,13 @@ At the moment there are 19 scripts.
 
 - Tilemap asset taken from [Adam Saltman](https://adamatomic.itch.io/jawbreaker) on itch.io;
 
-- Enemy sprite taken from [0x72](https://0x72.itch.io/dungeontileset-ii) on itch.io.
+- Enemy sprite taken from [0x72](https://0x72.itch.io/dungeontileset-ii) on itch.io;
 
 - Button UIs comes from [Sumo Studio](https://sumo-studios.itch.io/pixel-art-buttons);
 
-- Tiny Heroes come from [Free Game Assets](https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art).
+- Tiny Heroes come from [Free Game Assets](https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art);
+
+- Anime background taken from [NoranekoGames](https://noranekogames.itch.io/yumebackground);
+
+- Anime characters from [Sutemo](https://sutemo.itch.io/female-character) customized thanks to [Exuin](https://emily2.itch.io/sutemo) character creator.
 </details>
